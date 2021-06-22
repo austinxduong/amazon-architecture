@@ -1,5 +1,13 @@
 DATA MODELING ARCHITECH:
 
+Amazon S3 Simple Cloud Storage (storage bucket)
+
+- POST: create and configure a bucket
+- GET(findByAll): upload objects
+- GET(findByID): view objects
+- PUT: copy/move objects
+- DELETE: delete objects
+
 ## 1. create controllers:
     -lib>controller>cloud.js
         -CRUD routes will live in these files;
