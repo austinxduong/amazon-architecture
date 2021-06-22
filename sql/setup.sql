@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS profiles;
+
+CREATE TABLE profiles (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
+    bucket TEXT NOT NULL,
+    fileobject TEXT NOT NULL
+)
