@@ -2,6 +2,8 @@
 
 Amazon S3 Simple Cloud Storage (storage bucket)
 
+Amazon objects = files(JPEG, PNG, PDF, etc.)
+
 - POST: create and configure a bucket
 - GET(findByAll): upload objects
 - GET(findByID): view objects
