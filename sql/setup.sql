@@ -1,7 +1,8 @@
-DROP TABLE IF EXISTS profiles;
+DROP TABLE IF EXISTS clouds;
 
-CREATE TABLE profiles (
+CREATE TABLE clouds (
+    
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
     bucket TEXT NOT NULL,
-    fileobject TEXT NOT NULL
+    file_object TEXT NOT NULL
 )
