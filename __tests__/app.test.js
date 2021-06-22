@@ -23,7 +23,6 @@ test('creates a bucket via POST', async () => {
       bucket: 'first',
       fileObject: 'picture'
     });
-
   expect(res.body).toEqual({
     id: '1',
     bucket: 'first',
