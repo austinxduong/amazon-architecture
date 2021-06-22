@@ -16,3 +16,4 @@ it('it creates and/or configures a bucket, via communicating to .PUT route in co
     .send({ bucket: 3 }); 
   expect(res.body).toEqual({ id: '1', bucket: 3 });
 });
+
