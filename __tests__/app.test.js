@@ -18,7 +18,7 @@ describe('Amazon S3 storage buckets routes', () => {
   //   expect(res.body).toEqual({ id: '1', bucket: 3 });
   // });
 
-  test('creates a bucket via POST', async () => {
+  test('creates a bucket via .POST', async () => {
     const res = await request(app)
       .post('/api/v1/clouds').send({
         bucket: 'first',
