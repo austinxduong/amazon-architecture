@@ -1,7 +1,7 @@
 {
   "name": "amazon-architecture",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Amazon S3 Simple Cloud Storage (storage bucket)",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -35,5 +35,16 @@
     "express": "^4.17.1",
     "fetch": "^1.1.0",
     "pg": "^8.6.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinxduong/amazon-architecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/austinxduong/amazon-architecture/issues"
+  },
+  "homepage": "https://github.com/austinxduong/amazon-architecture#readme"
 }
