@@ -31,7 +31,7 @@ describe('Amazon S3 storage buckets routes', () => {
     });
   });
 
-  test('gets a bucket via .GET', async () => {
+  test('gets a bucket via .GET (findAll) ', async () => {
     const bucket1 = await Cloud.insert({
       bucket: 'this bucket holds files',
       object: 'this is a .JPG file, living inside the bucket'
