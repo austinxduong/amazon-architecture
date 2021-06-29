@@ -48,7 +48,7 @@ describe('Amazon S3 storage buckets routes', () => {
     });
 
     const res = await request(app)
-      .get('/api/v1/clouds/');
+      .get('/');
   
     expect(res.body).toEqual([bucket1, bucket2, bucket3]);
   });
