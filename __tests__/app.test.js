@@ -54,6 +54,14 @@ describe('Amazon S3 storage buckets routes', () => {
   });
 });
 
-// test('gets a specific/individual bucket via .GET findById', async () => {
+test('gets a specific/individual bucket via .GET findById', async () => {
+  const bucket1 = await Cloud.insert({
+    bucket: 'this bucket holds files',
+    object: 'these are all .JPG files, living in my S3 bucket'
+  });
   
-// }
+  const res = await request(app)
+    .get(`/api/v1/clouds/${bucket1.id}`);
+
+  expect(res.body).toEqual(bucket1);
+});
