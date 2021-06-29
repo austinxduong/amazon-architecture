@@ -2,8 +2,8 @@ import pool from '../lib/utils/pool.js';
 import setup from '../data/setup.js';
 import request from 'supertest';
 import app from '../lib/app.js';
-import Cloud from '../lib/models/cloud.js';
-// import Cloud from '../lib/models/Cloud.js';
+import Cloud from '../lib/models/Cloud.js';
+
 
 describe('Amazon S3 storage buckets routes', () => {
   beforeEach(() => {
@@ -53,3 +53,7 @@ describe('Amazon S3 storage buckets routes', () => {
     expect(res.body).toEqual([bucket1, bucket2, bucket3]);
   });
 });
+
+// test('gets a specific/individual bucket via .GET findById', async () => {
+  
+// }
