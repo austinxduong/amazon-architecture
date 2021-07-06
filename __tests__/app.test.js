@@ -65,3 +65,19 @@ test('gets a specific/individual bucket via .GET findById', async () => {
 
   expect(res.body).toEqual(bucket1);
 });
+
+test('copy/move objects via .PUT', async () => {
+
+  const object1 = await Cloud.insert({
+    quantity: 7
+  });
+
+  object1.quantity = 8;
+
+  const res = await request(app)
+    .put(`/api/v1/clouds/${object1.id}`)
+    .send(object1);
+  expect(res.body).toEqual(object1);
+});
+
+
